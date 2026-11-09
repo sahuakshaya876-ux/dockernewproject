@@ -1,28 +1,28 @@
 version: '3.8'
 services:
   movies:
-    image: akshayasahh/phonepemovies:latest
+    image: akshayasahh/phonepaymovies:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
 
   train:
-    image: akshayasahh/phonepetrain:latest
+    image: akshayasahh/phonepaytrain:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
   dth:
-    image: akshayasahh/phonepedth:latest
+    image: akshayasahh/phonepaydth:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
 
   recharge:
-   image: akshayasahh/phoneperecharge:latest
+   image: akshayasahh/phonepayrecharge:latest
    ports:
      - "84:80"
 
